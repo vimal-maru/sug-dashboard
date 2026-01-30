@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SugHeaderComponent } from './sug-header/sug-header.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [SugHeaderComponent, LayoutComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'sug-dashboard';
+  //title = 'sug-dashboard';
 }

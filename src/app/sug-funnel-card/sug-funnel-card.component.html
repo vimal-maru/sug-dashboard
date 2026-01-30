@@ -1,0 +1,20 @@
+<a class="funnel-card-link" [href]="cardLink">
+
+    <p-card class="funnel-card">
+        <!-- 1. card image -->
+        <ng-template pTemplate="header">
+            <img *ngIf="img" [src]="img" [alt]="title" class="funnel-card-img" />
+        </ng-template>
+
+        <!-- 2. card title & subtitle -->
+        <ng-template pTemplate="content">
+            <h6 class="funnel-card-title">
+                {{ title }}
+            </h6>
+
+            <p class="funnel-card-desc">
+                {{ desc }}
+            </p>
+        </ng-template>
+    </p-card>
+</a>
